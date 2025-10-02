@@ -80,23 +80,6 @@ jobs:
           -W setupapi-DiskSpaceList
 
         for p in \
-          wine-staging/patches/loader-KeyboardLayouts/*.patch \
-          wine-staging/patches/ntdll-Hide_Wine_Exports/*.patch \
-          wine-staging/patches/kernel32-Debugger/*.patch \
-          wine-staging/patches/ntdll-ext4-case-folder/*.patch \
-          wine-staging/patches/user32-FlashWindowEx/*.patch \
-          wine-staging/patches/winex11-Fixed-scancodes/*.patch \
-          wine-staging/patches/winex11-Window_Style/*.patch \
-          wine-staging/patches/winex11-ime-check-thread-data/*.patch \
-          wine-staging/patches/winex11.drv-Query_server_position/*.patch \
-          wine-staging/patches/wininet-Cleanup/*.patch \
-          eggroll/patches/wine-hotfixes/staging/cryptext-CryptExtOpenCER/*.patch \
-          eggroll/patches/wine-hotfixes/staging/wineboot-ProxySettings/*.patch \
-          eggroll/patches/proton/83-nv_low_latency_wine.patch \
-          eggroll/patches/proton/build_failure_prevention-add-nls.patch \
-          eggroll/patches/proton/add-envvar-to-gate-media-converter.patch \
-          eggroll/patches/proton/0001-ntdll-Downgrade-using-kernel-write-watches-from-MESS.patch \
-          eggroll/patches/proton/0001-win32u-add-env-switch-to-disable-wm-decorations.patch \
           *.patch
         do
           echo $p
