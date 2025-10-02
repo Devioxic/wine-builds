@@ -10,3 +10,4 @@ index ba04b6e..a053666 100644
 -
      if (ex_style & WS_EX_TOOLWINDOW) return 0;
      if (ex_style & WS_EX_LAYERED) return 0;
+ 
