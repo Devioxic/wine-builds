@@ -1,6 +1,12 @@
 diff --git a/dlls/winex11.drv/window.c b/dlls/winex11.drv/window.c
-index abcdef1..1234567 100644
+index ba04b6e..a053666 100644
 --- a/dlls/winex11.drv/window.c
 +++ b/dlls/winex11.drv/window.c
-@@ -3725,7 +3725,6 @@ unsigned long SomeFunction(...)
+@@ -478,8 +478,6 @@ static unsigned long get_mwm_decorations_for_style( DWORD style, DWORD ex_style
+ {
+     unsigned long ret = 0;
+ 
 -    if (X11DRV_HasWindowManager( "Mutter" )) return 0;
+-
+     if (ex_style & WS_EX_TOOLWINDOW) return 0;
+     if (ex_style & WS_EX_LAYERED) return 0;
