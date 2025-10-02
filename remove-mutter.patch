@@ -1,5 +1,4 @@
 diff --git a/dlls/winex11.drv/window.c b/dlls/winex11.drv/window.c
-index ba04b6e..a053666 100644
 --- a/dlls/winex11.drv/window.c
 +++ b/dlls/winex11.drv/window.c
 @@ -478,8 +478,6 @@ static unsigned long get_mwm_decorations_for_style( DWORD style, DWORD ex_style
@@ -11,4 +10,3 @@ index ba04b6e..a053666 100644
      if (ex_style & WS_EX_TOOLWINDOW) return 0;
      if (ex_style & WS_EX_LAYERED) return 0;
  
-
